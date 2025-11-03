@@ -33,6 +33,7 @@
 
 
 
+
   .jost{
     font-family: var(--font-jost);
   }
@@ -40,4 +41,21 @@
   .lobster{
     font-family: var(--font-lobster);
   }
+
+    @layer base {
+    body{
+      @apply bg-green-950 text-white font-jost tracking-wider;
+    }
+  }
+
+  .nav-link {
+    @apply text-lg font-bold duration-300;
+  }
+
+  .nav-link:hover {
+    @apply text-yellow-500;
+  }
+
+
+
 }

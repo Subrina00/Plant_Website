@@ -34,37 +34,40 @@ function App() {
    {/* ======== HEADER SECTION ======== */}
 
 
-   <header id="navbar">
-      <nav>
-        <div>IndoorPlants.</div>
-        <div>
+   <header id="navbar" className='bg-green-950 fixed w-full top-0 left-0 z-50'>
+      <nav className='container flex items-center justify-between h-16 sm:h-20'>
+        <div className='font-lobster sm:text-2xl'>IndoorPlants.</div>
 
-          <ul>
+        <div id='nav-menu' className='absolute top-0 left-[-100%] min-h-[80vh] w-full
+        bg-green-950/80 backdrop-blur-sm flex items-center justify-center
+         duration-300 overflow-hidden'>
+
+          <ul className='flex flex-col items-center gap-8'>
             <li>
-              <a href="#">Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li>
-              <a href="#">Popular</a>
+              <a href="#popular" class="nav-link">Popular</a>
             </li>
             <li>
-              <a href="#">Review</a>
+              <a href="#review" class="nav-link">Review</a>
             </li>
           </ul>
 
-          <div>
-            <img src={leaf1} alt="" />
+          <div className='absolute bottom-0 -right-10 opacity-90'>
+            <img src={leaf1} className='w-32' />
           </div>
-          <div>
-            <img src={leaf2} alt="" />
+          <div className='absolute -top-5 -left-5 rotate-90 opacity-90'>
+            <img src={leaf2} className='w-32' />
           </div>
 
         </div>
 
-        <div>
-          <i class="ri-menu-4-line"></i>
+        <div className='text-xl sm:text-3xl cursor-pointer z-50'>
+          <i class="ri-menu-4-line" id='hamburger'></i>
         </div>
 
       </nav>
