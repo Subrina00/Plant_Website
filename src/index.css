@@ -31,12 +31,7 @@
     
   }
 
-  @screen md {
-    .container {
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-  }
+
 
   .jost{
     font-family: var(--font-jost);
